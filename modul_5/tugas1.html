@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sembunyi dan Tampilkan Gambar</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #gambar {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="sembunyi">Sembunyikan</button>
+    <button id="tampilkan">Tampilkan</button>
+    <div id="gambar">
+      <img src="https://via.placeholder.com/300" alt="Gambar" />
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#sembunyi").click(function () {
+          $("#gambar").hide();
+        });
+        $("#tampilkan").click(function () {
+          $("#gambar").show();
+        });
+      });
+    </script>
+  </body>
+</html>

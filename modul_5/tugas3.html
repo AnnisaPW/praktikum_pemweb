@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efek Fade</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #kotak {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeTo">Fade To 0.3</button>
+    <div id="kotak"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#fadein").click(function () {
+          $("#kotak").fadeIn();
+        });
+        $("#fadeout").click(function () {
+          $("#kotak").fadeOut();
+        });
+        $("#fadeTo").click(function () {
+          $("#kotak").fadeTo("slow", 0.3);
+        });
+      });
+    </script>
+  </body>
+</html>
